@@ -1,0 +1,32 @@
+{
+  "name": "Test",
+  "description": "Framework for Rails Basis",
+  "scripts": {
+  },
+  "env": {
+    "LANG": "en_US.UTF-8",
+    "RACK_ENV": {
+      "required": true
+    },
+    "RAILS_ENV": "production",
+    "RAILS_LOG_TO_STDOUT": "enabled",
+    "RAILS_SERVE_STATIC_FILES": "enabled",
+    "SECRET_KEY_BASE": "57fa76f507ad88bf7898be14de53708cb53d321c6271142d91cbc09341b3f43d04a3bb49138e21813f61705dd611a5940e51b7c1d18f6cb1de085c42ec452d62"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    },
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
