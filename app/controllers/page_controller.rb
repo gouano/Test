@@ -21,4 +21,9 @@ class PageController < ApplicationController
     end
   end
 
+  # GET '/news'
+  def news
+    # views/page/product
+  end
+
 end
